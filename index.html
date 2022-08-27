@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Trigger/Open The Modal -->
+<marquee bgcolor="#ffffcc" color="red"><a href="">Quiz creating service will not be available on 28th August 2022 because of some site updates.</a> </marquee>
+<br>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+  <center>
+    <h5 class="card-title">Book Donation Requests</h5>
+    
+   <a href="#" id="myBtn" class="btn btn-primary">Show Requests</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+  <center>
+    <h5 class="card-title">Notes</h5>
+    
+   <a href="#" id="myBtn2" class="btn btn-primary">Upload</a>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><embed width="100%" height="80%" src="https://docs.google.com/spreadsheets/d/1WLU5UdmFSf9Y_weAFhf6H34xdTbsRMDQus0suGwo3Gc/gviz/tq?tqx=out:html&tq&"></embed></p>
+  </div>
+  
+<div id="myModal_2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Coming Soon</p>
+  </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal_2");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<style>
+a{
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+}
+marquee{
+color: red;
+}
+h5:hover{
+text-decoration:none;
+background-color:yellow;
+}
+myBtn{
+width:30;
+}
+</style>
+</body>
+</html>
